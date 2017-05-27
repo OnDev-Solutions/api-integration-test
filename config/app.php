@@ -237,4 +237,5 @@ return [
 
     'client_id' => '95bf0854687fd5979b5b0fad1ab65bf1e8736439',
     'client_secret' => 'E1QWCHMOTlwzs5hPs41vi1RJ/2Gi9ePTi34382PHG7Af6lakPe/aXnODC8jH6M4NFknglFaFerc2XnPC/IB77hx96Lf0doM3zIiq26FYEj9mWC8wPJhbHwfwjhyx3N0r',
+
 ];

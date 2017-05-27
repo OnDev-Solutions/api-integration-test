@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'cloud' => env('FILESYSTEM_CLOUD', 's3'),
+    'cloud' => env('FILESYSTEM_CLOUD', 'google'),
 
     /*
     |--------------------------------------------------------------------------
@@ -40,6 +40,8 @@ return [
     | Supported Drivers: "local", "ftp", "s3", "rackspace"
     |
     */
+
+    //'cloud' => 'google', // Optional: set Google Drive as default cloud storage
 
     'disks' => [
 
@@ -61,6 +63,14 @@ return [
             'secret' => env('AWS_SECRET'),
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
+        ],
+
+        'google' => [
+            'driver' => 'google',
+            'clientId' => '468031220645-bfru57pc847h3jmdsmm20kihieeb9r51.apps.googleusercontent.com',
+            'clientSecret' => 'v2tAI07dxP1cdvv3GerxzaqW',
+            'refreshToken' => '1/LcK8p0kuEZJqHZQjb5yBohhMeyHh-yIdmi-GZsoMdi8',
+            'folderId' => null,
         ],
 
     ],
